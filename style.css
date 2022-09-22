@@ -1,0 +1,518 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+:root {
+  --primaryColor: #0c1821;
+  --secondaryColor: #040f16;
+  --colorFonts: #ffffff;
+  --margemTop: 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h3 {
+  font-size: 40px;
+  display: block;
+  color: var(--colorFonts);
+  margin-bottom: 10px;
+  padding: 20px 0px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+hr {
+  background-color: var(--colorFonts);
+}
+.button {
+  display: block;
+  background-color: #040f16;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 42vw;
+}
+/* Barra de navegação */
+
+nav {
+  background-color: var(--primaryColor);
+  height: 70px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+ul a {
+  text-decoration: none;
+  color: var(--colorFonts);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Sessão apresentação */
+
+.apresentacao {
+  margin-top: var(--margemTop);
+  background-image: url("imagens/fotoMinha.png");
+  background-color: var(--secondaryColor);
+  background-repeat: no-repeat;
+  background-position: right;
+  color: var(--colorFonts);
+  height: 570px;
+  text-align: center;
+}
+
+.apresentacao h3 {
+  font-size: 50px;
+  display: block;
+}
+.apresentacao h4 {
+  font-size: 25px;
+  display: block;
+}
+.apresentacao img {
+  display: block;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70%;
+  border-left: 5px solid var(--primaryColor);
+  border-radius: 0px 40px 0px 0px;
+}
+.apresentacao a {
+  text-decoration: none;
+  color: var(--colorFonts);
+  display: inline-block;
+  margin-top: 300px;
+  background-color: var(--primaryColor);
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  border-left: 5px solid #ffffff;
+}
+
+/* Sobre Mim */
+
+.texto {
+  display: flex;
+}
+.texto p {
+  margin-left: 10px;
+  font-size: 35px;
+  margin: 0px 50px;
+}
+.sobreMim {
+  background-color: var(--primaryColor);
+  color: var(--colorFonts);
+  margin-top: var(--margemTop);
+  height: 100vh;
+}
+
+.sobreMim h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sobreMim p {
+  margin-bottom: 10px;
+}
+
+.sobreMim a {
+  display: block;
+  text-align: center;
+  margin-top: 30vh;
+  position: absolute;
+  border-left: 5px solid #ffffff;
+}
+
+#sprites {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  width: 20vw;
+}
+.sobreMim img {
+  height: 100px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.sobreMim ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+/* Habilidades */
+
+.copetencias {
+  background-color: var(--secondaryColor);
+  color: var(--colorFonts);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.copetencias li {
+  font-size: 25px;
+}
+
+.copetencias h3 {
+  text-align: center;
+}
+.copetencias ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10vh;
+}
+.copetencias li {
+  text-align: center;
+  width: 200px;
+  padding: 30px 10px;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  margin-right: 10px;
+  margin: 10px;
+  width: 80%;
+}
+.descricao {
+  color: var(--colorFonts);
+  height: 78vh;
+  width: 100%;
+}
+.descricao p {
+  font-size: 25px;
+  margin-right: 40px;
+}
+.habilidades {
+  height: 100%;
+  width: 40vw;
+  width: 100%;
+}
+.habilidades ul li {
+  background-image: url("imagens/CupcakeEmpresa.jpg");
+  background-position: center;
+  background-size: cover;
+  color: var(--primaryColor);
+}
+/* Section em progresso */
+
+.cobrinha {
+  background-color: var(--primaryColor);
+  height: 100vh;
+  text-align: center;
+}
+
+/* Projetos */
+
+.projeto {
+  background-color: var(--primaryColor);
+  text-align: center;
+}
+.projeto h3 {
+  font-size: 30px;
+}
+.projetos {
+  background-color: var(--primaryColor);
+  margin-top: var(--margemTop);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projetos a {
+  margin-left: 10px;
+  padding: 80px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #1c6ea4;
+}
+.projeto a:hover {
+  transition: all 1s ease;
+  border-left: 15px solid #1c6ea4;
+  padding: 160px 80px;
+}
+#zoo:hover {
+  transition: all 1s ease;
+  border-left: 15px solid #1c6ea4;
+  padding: 160px 80px;
+}
+#inter {
+  background-image: url("imagens/CupcakeEmpresa.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#zoo {
+  background-image: url("imagens/ZoonoseImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+}
+/* Contatos */
+
+.contatos {
+  margin-top: var(--margemTop);
+  background-color: var(--secondaryColor);
+  color: var(--colorFonts);
+  height: 200px;
+}
+.contatos ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Footer */
+
+footer {
+  margin-top: var(--margemTop);
+  background-color: var(--secondaryColor);
+  color: var(--colorFonts);
+  height: 80px;
+}
+
+/* Icons */
+
+/* Instagram */
+.gg-instagram {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.gg-instagram::after,
+.gg-instagram::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-instagram::after {
+  border: 2px solid;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 3px;
+}
+
+.gg-instagram::before {
+  border-radius: 3px;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  right: 1px;
+  top: 1px;
+}
+
+/* Facebook */
+
+.gg-facebook {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+}
+
+.gg-facebook::after,
+.gg-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.gg-facebook::before {
+  width: 8px;
+  height: 20px;
+  border-left: 4px solid;
+  border-top: 4px solid;
+  border-top-left-radius: 5px;
+  left: 6px;
+}
+
+.gg-facebook::after {
+  width: 10px;
+  height: 4px;
+  background: currentColor;
+  top: 7px;
+  left: 4px;
+  transform: skew(-5deg);
+}
+
+/* Phone */
+
+.gg-smartphone {
+  background: linear-gradient(to left, currentColor 5px, transparent 0)
+    no-repeat 4px 12px/2px 2px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 14px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  /* Apresentação */
+
+  .apresentacao a {
+    display: block;
+    margin: 10px 0px;
+    position: relative;
+    top: 200px;
+    left: 80px;
+  }
+
+  img {
+    display: block;
+  }
+  .projetos {
+    display: block;
+  }
+  /* Sobre mim */
+  /* Sobre Mim */
+
+  .texto {
+    display: block;
+  }
+  .texto p {
+    margin-left: 10px;
+    font-size: 35px;
+    margin: 0px 50px;
+  }
+  .sobreMim {
+    background-color: var(--primaryColor);
+    color: var(--colorFonts);
+    margin-top: var(--margemTop);
+    height: 100%;
+    background-image: url("imagens/tree.png");
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+  }
+
+  .sobreMim h3 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .sobreMim p {
+    margin-bottom: 0px;
+  }
+
+  .sobreMim a {
+    display: block;
+    text-align: center;
+    margin-top: 5vh;
+    border-left: 5px solid #ffffff;
+    margin-left: 25%;
+  }
+
+  #sprites {
+    max-width: 00px;
+    height: 00px;
+    padding: 0px;
+    width: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sobreMim ul {
+    visibility: hidden;
+  }
+  /* Habilidades */
+
+  .copetencias {
+    background-color: var(--secondaryColor);
+    color: var(--colorFonts);
+    height: 80vh;
+    display: block;
+    align-items: center;
+  }
+
+  .copetencias li {
+    font-size: 25px;
+  }
+
+  .copetencias h3 {
+    text-align: center;
+  }
+  .copetencias ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0vh;
+    padding-top: 10vh;
+  }
+  .copetencias li {
+    text-align: center;
+    width: 200px;
+    padding: 50px 10px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    margin: 10px 20px;
+    width: 80%;
+  }
+  .descricao {
+    margin: 0px;
+    padding: 0px;
+    height: 20vh;
+  }
+  .descricao p {
+    margin: 0px;
+    padding: 0px;
+    visibility: hidden;
+  }
+  .cobrinha {
+    visibility: hidden;
+    height: 0px;
+  }
+  /* Projetos */
+
+  .projetos {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .projetos a {
+    margin-left: 10px;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    border-left: 5px solid #1c6ea4;
+  }
+}
