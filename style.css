@@ -1,3 +1,5 @@
+@import url("http://fonts.cdnfonts.com/css/pixel-art");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,12 +25,14 @@ h3 {
   color: var(--colorFonts);
   margin-bottom: 10px;
   padding: 20px 0px;
+  font-family: "Pixel-Art", sans-serif;
 }
 a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
 }
+
 hr {
   background-color: var(--colorFonts);
 }
@@ -79,9 +83,31 @@ ul a {
   font-size: 50px;
   display: block;
 }
+
+.anima {
+  font-size: 50px;
+  animation-name: escrever;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+@keyframes escrever {
+  0% {
+    color: #040f16;
+  }
+
+  50% {
+    color: var(--colorFonts);
+  }
+
+  100% {
+    color: #040f16;
+  }
+}
+
 .apresentacao h4 {
   font-size: 25px;
   display: block;
+  animation: underline 1s infinite;
 }
 .apresentacao img {
   display: block;
@@ -100,10 +126,46 @@ ul a {
   background-color: var(--primaryColor);
   padding: 10px;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 50px;
   border-left: 5px solid #ffffff;
+  animation: lua 10s infinite;
+  animation-delay: 6s;
 }
-
+.underline {
+  animation: underline 1s infinite;
+}
+@keyframes underline {
+  0% {
+    text-decoration: underline;
+  }
+  50% {
+    text-decoration: none;
+  }
+  100% {
+    text-decoration: underline;
+  }
+}
+@keyframes lua {
+  0% {
+    border-radius: 50px;
+    border-left: 5px solid #ffffff;
+  }
+  25% {
+    border-radius: 50px;
+    border-left: 15px ridge #ffffff;
+  }
+  50% {
+    border-radius: 100px;
+    border-left: 25px solid #ffffff;
+  }
+  75% {
+    border-left: 15px ridge #ffffff;
+  }
+  100% {
+    border-radius: 50px;
+    border-left: 5px solid #ffffff;
+  }
+}
 /* Sobre Mim */
 
 .texto {
@@ -138,14 +200,37 @@ ul a {
 }
 
 #sprites {
+  object-fit: contain;
   max-width: 100%;
-  height: auto;
-  padding: 20px;
-  width: 20vw;
+  max-height: 100%;
+  padding: 5px;
+  width: 110px;
+  animation: movimentoArvore 1s infinite;
 }
-.sobreMim img {
-  height: 100px;
+@keyframes movimentoArvore {
+  0% {
+    transform: skewY(0);
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: skewY(5deg);
+    transform: scale(1.1);
+  }
+  75% {
+    transform: skewY(-5deg);
+  }
+  100% {
+    transform: skewY(0);
+  }
+}
+#personagem {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 20px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 .sobreMim ul {
@@ -203,10 +288,26 @@ ul a {
   width: 100%;
 }
 .habilidades ul li {
-  background-image: url("imagens/CupcakeEmpresa.jpg");
+  color: var(--primaryColor);
+}
+#html {
+  background-image: url("imagens/html\ css.png");
   background-position: center;
   background-size: cover;
-  color: var(--primaryColor);
+  background-repeat: no-repeat;
+}
+#js {
+  background-image: url("imagens/Javascript.png");
+  background-position: center;
+  background-size: contain;
+  background-color: #f7e018;
+  background-repeat: no-repeat;
+}
+#php {
+  background-image: url("imagens/php.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* Section em progresso */
 
@@ -244,12 +345,12 @@ ul a {
 .projeto a:hover {
   transition: all 1s ease;
   border-left: 15px solid #1c6ea4;
-  padding: 160px 80px;
+  padding: 110px 80px;
 }
 #zoo:hover {
   transition: all 1s ease;
   border-left: 15px solid #1c6ea4;
-  padding: 160px 80px;
+  padding: 110px 80px;
 }
 #inter {
   background-image: url("imagens/CupcakeEmpresa.jpg");
