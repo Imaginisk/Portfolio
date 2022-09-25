@@ -16,15 +16,26 @@
     <!-- Navegação -->
     <nav>
       <!-- Home, Sobre mim, Projetos, Contatos -->
-      <ul>
+      <ul class="itens-nav">
+        <li>
+          <a id="modoNoturno" onclick="modoNoturno()" href="#"
+            ><i class="gg-moon"></i
+          ></a>
+        </li>
+        <li>
+          <a id="modoClaro" onclick="modoClaro()" href="#"
+            ><i class="gg-sun"></i
+          ></a>
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#sobreMim">Sobre mim</a></li>
         <li><a href="#copetencias">Projetos</a></li>
         <li><a href="#contatos">Contatos</a></li>
       </ul>
+      <img src="Imagens/menuBranco.png" class="menu-btn" alt="" />
     </nav>
     <!-- Sessão Apresentação -->
-    <section class="apresentacao" id="apresentacao">
+    <header class="apresentacao" id="apresentacao">
       <h3>Olá, eu sou <span class="anima"> |</span></h3>
       <h4>DesenvolverFront End</h4>
       <a
@@ -35,7 +46,7 @@
       <a href="https://github.com/Imaginisk" target="_blank"
         ><span class="underline">GitHub</span></a
       >
-    </section>
+    </header>
     <!-- Sessão Sobre Mim -->
     <section class="sobreMim" id="sobreMim">
       <h3>Sobre Mim</h3>
@@ -75,14 +86,20 @@
     <section class="copetencias" id="copetencias">
       <div class="habilidades">
         <ul>
-          <li id="html">.</li>
-          <li id="js">.</li>
-          <li id="php">.</li>
+          <li onmouseenter="descHtml()" onmouseleave="textNormal()" id="html">
+            .
+          </li>
+          <li onmouseenter="descJs()" onmouseleave="textNormal()" id="js">.</li>
+          <li onmouseenter="descPhp()" onmouseleave="textNormal()" id="php">
+            .
+          </li>
           <li>Habilidade</li>
         </ul>
       </div>
       <div class="descricao">
-        <p>/* Passe em cima para visualizar a descrição da habilidade. */</p>
+        <p id="descricao">
+          /* Passe em cima para visualizar a descrição da habilidade. */
+        </p>
       </div>
     </section>
     <!-- Sessão em progresso -->
